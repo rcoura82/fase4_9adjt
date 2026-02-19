@@ -93,6 +93,13 @@ chmod +x infra/terraform/bootstrap-backend.sh
 ./infra/terraform/bootstrap-backend.sh "$GOOGLE_CLOUD_PROJECT" "SEU_BUCKET_TFSTATE" "southamerica-east1"
 ```
 
+Bootstrap completo (projeto + billing + Terraform) via script:
+
+```bash
+chmod +x scripts/setup-gcp-bootstrap.sh
+./scripts/setup-gcp-bootstrap.sh "SEU_PROJECT_ID" "southamerica-east1" "SEU_BUCKET_TFSTATE" "fase4_9adjt/envs/dev" "SEU_BILLING_ACCOUNT_ID"
+```
+
 Alternativa manual:
 
 ```bash
