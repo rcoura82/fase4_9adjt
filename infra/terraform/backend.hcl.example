@@ -1,0 +1,2 @@
+bucket = "seu-bucket-tfstate"
+prefix = "fase4_9adjt/envs/dev"

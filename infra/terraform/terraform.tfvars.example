@@ -1,0 +1,11 @@
+project_id           = "seu-projeto-gcp"
+region               = "southamerica-east1"
+firestore_location   = "southamerica-east1"
+firestore_collection = "avaliacoes"
+pubsub_topic_critico = "feedback-critico"
+
+scheduler_cron     = "0 8 * * 1"
+scheduler_timezone = "America/Sao_Paulo"
+
+# Preencha após o primeiro deploy da função relatorio-semanal (Gen2)
+weekly_function_url = ""
