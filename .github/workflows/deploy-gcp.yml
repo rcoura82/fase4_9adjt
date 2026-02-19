@@ -15,6 +15,7 @@ env:
   REGION: ${{ vars.GCP_REGION }}
   TF_STATE_BUCKET: ${{ vars.GCP_TF_STATE_BUCKET }}
   TF_STATE_PREFIX: ${{ vars.GCP_TF_STATE_PREFIX }}
+  RUN_ALLOW_UNAUTHENTICATED: ${{ vars.GCP_RUN_ALLOW_UNAUTHENTICATED }}
 
 jobs:
   quality:
@@ -118,13 +119,18 @@ jobs:
 
       - name: Deploy API (Cloud Run)
         run: |
+          AUTH_FLAG="--no-allow-unauthenticated"
+          if [[ "${RUN_ALLOW_UNAUTHENTICATED,,}" == "true" ]]; then
+            AUTH_FLAG="--allow-unauthenticated"
+          fi
+
           gcloud run deploy api-feedback \
             --project "${PROJECT_ID}" \
             --region "${REGION}" \
             --source api-feedback \
             --service-account "${{ steps.tf.outputs.api_sa }}" \
             --set-env-vars "GOOGLE_CLOUD_PROJECT=${PROJECT_ID},GCP_PROJECT_ID=${PROJECT_ID},GCP_FIRESTORE_COLLECTION=${{ steps.tf.outputs.collection }},GCP_PUBSUB_TOPIC_CRITICO=${{ steps.tf.outputs.topic }}" \
-            --allow-unauthenticated
+            "${AUTH_FLAG}"
 
       - name: Deploy função notificacao critica (Gen2 / PubSub)
         run: |

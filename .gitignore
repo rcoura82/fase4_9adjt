@@ -3,6 +3,24 @@ target/
 .vscode/
 *.iml
 
+# Secrets e arquivos locais sensíveis
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.kubeconfig
+*credentials*.json
+service-account*.json
+
+# Terraform local/state
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+
 .terraform/
 *.tfstate
 *.tfstate.*

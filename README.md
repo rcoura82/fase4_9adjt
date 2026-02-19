@@ -217,8 +217,10 @@ gcloud run deploy api-feedback \
 	--source api-feedback \
 	--region "$REGION" \
 	--project "$PROJECT_ID" \
-	--allow-unauthenticated
+	--no-allow-unauthenticated
 ```
+
+Para expor publicamente de forma intencional, troque para `--allow-unauthenticated`.
 
 Deploy função de notificação crítica (Cloud Functions Gen2, Pub/Sub):
 
@@ -282,6 +284,7 @@ Variáveis (`Repository variables`):
 - `GCP_REGION` (ex.: `southamerica-east1`)
 - `GCP_TF_STATE_BUCKET` (bucket GCS do state remoto)
 - `GCP_TF_STATE_PREFIX` (ex.: `fase4_9adjt/envs/prod`)
+- `GCP_RUN_ALLOW_UNAUTHENTICATED` (`true` para API pública; padrão recomendado: `false`)
 
 Segredos (`Repository secrets`):
 - `GCP_WORKLOAD_IDENTITY_PROVIDER`
