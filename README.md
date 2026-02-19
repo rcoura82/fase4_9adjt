@@ -63,6 +63,7 @@ Resposta (`201 Created`):
 ## Estrutura inicial do repositório
 - `docs/arquitetura.md`: arquitetura detalhada e fluxo ponta a ponta
 - `docs/plano-entrega.md`: plano de execução, checklist de avaliação e vídeo
+- `docs/checklist-hardening-gcp.md`: runbook de hardening no Console GCP
 - `.github/copilot-instructions.md`: instruções do projeto para agentes AI
 
 ## Estrutura de código (scaffold atual)
