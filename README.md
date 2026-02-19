@@ -294,3 +294,9 @@ Recomendação: usar Workload Identity Federation e evitar chave JSON estática 
 - Repositório aberto com código-fonte
 - Documentação com arquitetura, deploy, monitoramento e funções
 - Vídeo demonstrando a solução funcionando em nuvem
+
+## Padrão de release notes
+- Arquivo oficial de histórico: `CHANGELOG.md`
+- Template para novas versões: `.github/release-notes-template.md`
+- Estrutura padronizada: **Features**, **Fixes**, **Infra** e **Breaking Changes**
+- Próxima versão já preparada no changelog: `v0.1.1 - Em preparação`

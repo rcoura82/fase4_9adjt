@@ -2,6 +2,23 @@
 
 Todas as mudanças relevantes deste projeto serão documentadas neste arquivo.
 
+## v0.1.1 - Em preparação
+
+### 🚀 Features
+- _Preencher com novas funcionalidades._
+
+### 🛠 Fixes
+- _Preencher com correções de bugs e ajustes funcionais._
+
+### ☁️ Infra
+- _Preencher com mudanças de infraestrutura, CI/CD, segurança e observabilidade._
+
+### ⚠️ Breaking Changes
+- Nenhuma.
+
+### 📝 Notas de release
+- _Contexto da entrega, impactos e instruções especiais de rollout (se houver)._
+
 ## v0.1.0 - 2026-02-19
 
 ### 🎯 Escopo da entrega
