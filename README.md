@@ -311,3 +311,9 @@ Recomendação: usar Workload Identity Federation e evitar chave JSON estática 
 - Template para novas versões: `.github/release-notes-template.md`
 - Estrutura padronizada: **Features**, **Fixes**, **Infra** e **Breaking Changes**
 - Próxima versão já preparada no changelog: `v0.1.1 - Em preparação`
+
+## Kit de entrega (fase 4)
+- Checklist de entregáveis: `docs/entregaveis-tech-challenge-fase4.md`
+- Roteiro de vídeo: `docs/roteiro-video-demonstracao.md`
+- Matriz de avaliação: `docs/matriz-avaliacao-fase4.md`
+- Hardening GCP: `docs/checklist-hardening-gcp.md`
