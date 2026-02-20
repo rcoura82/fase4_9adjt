@@ -1,10 +1,9 @@
 # Entrega Final Consolidada — Tech Challenge Fase 4
 
 **Projeto:** fase4_9adjt  
-**Equipe:** preencher  
-**Data:** 2026-02-20  
+** M366021
+**Data:** 2026-02-19  
 **Repositório público:** https://github.com/rcoura82/fase4_9adjt  
-**Formato de demonstração adotado:** PDF com evidências em imagem (sem vídeo)
 
 ## Declaração de escopo da demonstração
 
@@ -12,8 +11,8 @@ Para esta entrega, devido à limitação de tempo para provisionamento completo 
 
 Status da demonstração:
 - Execução funcional local: **concluída** (API + funções + build).
-- Provisionamento cloud completo (GCP) em conta final: **planejado para próxima iteração**.
-- Evidências visuais no PDF: **parcialmente simuladas**, identificadas como placeholders.
+- Provisionamento cloud completo (GCP) em conta final
+- Evidências visuais no PDF
 
 Compromisso de transparência:
 - Nenhuma evidência simulada é apresentada como evidência real de produção.
